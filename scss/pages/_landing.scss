@@ -1,0 +1,522 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.banner_content{
+    margin-top: 9rem;
+    display: flex;
+}
+.banner_content hr {
+    width: 30%;
+    margin-top: 1.5rem;
+}
+.banner_content1 h2{
+    font-family: $ff-secondary;
+    color: #18256D;
+}
+.banner_content2 h1{
+    color: #18256D;
+    font-family: $ff-primary;
+   font-size: 75px;
+   text-align: center;
+   @include mediaQuery ($break-md){
+    font-size: 60px;
+   }
+}
+.banner_web hr {
+    width: 30%;
+    margin-left: auto;
+}
+.banner_web h2 {
+    font-family: $ff-secondary;
+    color: #18256D;
+    font-size: 35px;
+    text-align: right;
+    position: relative;
+    right: 23rem;
+    bottom: -0.5rem;
+    @include mediaQuery ($break-md){
+        font-size: 25px;
+        position: relative;
+        right: 8.7rem;
+       }
+}
+.date{
+    text-align: center;
+    color: #18256D;
+    margin-top: 14rem;
+    margin-bottom: 5rem;
+}
+
+.about h1 {
+     color: #18256D;
+     font-size: 30px;
+}
+.about hr {
+    border: solid 1px;
+    margin-top: 1rem;
+    color: #18256D;
+    margin-bottom: 5rem;
+}
+.about_content{
+    text-align: center;
+    color: #18256D;
+    p {
+        text-align: justify;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 3rem;
+
+    }
+    h2{
+        margin: 0.5rem 0;
+    }
+    a{
+        padding: 0.8rem;
+        background-color: $clr-primary;
+        color: $clr-white;
+        border-radius: 1.5rem;
+        position: relative;
+        right: 300px;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        @include mediaQuery ($break-md){
+            position: relative;
+            right: 35%;
+            top: 2.3rem;
+        }
+    }
+}
+
+.icons{
+    font-size: small;
+    margin-left: 75%;
+    @include mediaQuery ($break-md){
+        margin-left: 70%;
+    }
+    
+    ul {
+        gap: 1rem;
+        color: $clr-primary;
+        font-size: 1.5rem;
+
+    }
+    hr{
+        color: $clr-primary;
+    }
+}
+.skills{
+    background-color: #18256D;
+
+    &_wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+        @include mediaQuery ($break-md){
+            display: block;
+        }
+        .card{
+            text-align: center;
+            padding: 3rem;
+            background-color: $clr-white;
+            border-radius: 1rem;
+            margin-bottom: 3rem;
+            a {
+                font-size: 3rem;
+                color: black;
+            }
+            h2 {
+                font-size: 1rem;
+                color: #18256D;
+                margin-bottom: 1rem;
+            }
+
+        }
+        
+    }
+    
+    h1{
+        color: $clr-white;
+    }
+
+}
+
+.experience {
+    padding: 2rem;
+   
+    &_wrapper{
+        gap: 5rem;
+        @include mediaQuery ($break-md){
+            display: block !important;
+            width: 82%;
+            margin-left: auto;
+        }
+    }
+    hr {
+        color: $clr-primary;
+        border: solid 0.5px;
+       margin-top: 1rem;
+    }
+    h1 {
+        color: $clr-primary;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+       
+    }
+    h2 {
+        color: $clr-primary;
+        margin-left: 0.8rem;
+        margin-bottom: 0.5rem;
+        font-size: medium;
+    }
+    h3 {
+        color: $clr-primary;
+        margin-left: 6rem;
+    }
+    p{
+        color: #18256D;
+        margin-left: 4.5rem;
+    }
+    h4{
+        color: #18256D;
+    }
+
+    .experience_card{
+       
+        img{
+            transition: 0.3s;
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+        h2{
+            margin-bottom: 1rem;
+        }
+        h3{
+            margin-top: 1rem;
+        }
+    }
+    .experience_card1{
+
+        img{
+            transition: 0.3s;
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+        h2{
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        h3{
+            margin-top: 1rem;
+        }
+        h4{
+            margin-left: 1rem;
+        }
+        p{  
+            margin-left: 3.5rem;
+        }
+    }
+    .experience_card2{
+        img{
+            transition: 0.3s;
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+        h2{
+            margin-bottom: 1rem;
+        }
+        h3{
+            margin-top: 1rem;
+        }
+        h4{
+            margin-left: 0.5rem;
+        }
+        p{
+            margin-left: 3rem;
+        }
+    }
+    .experience_card3{
+
+        hr {
+            margin-top: 5rem;
+        }
+
+        img{
+            transition: 0.3s;
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+        h2{
+            margin-left: 4rem;
+            margin-bottom: 1rem;
+        }
+        h3{
+            margin-top: 1rem;
+        }
+        h4{
+            margin-left: 0.5rem;
+        }
+        p{
+            margin-left: 2rem;
+        }
+    }
+
+}
+
+.latestProj {
+    hr{
+        color: $clr-primary;
+        border: solid 1px;
+       margin-top: 1rem;
+    }
+    h1{
+        font-size: 2rem;   
+        @include mediaQuery ($break-md){
+          text-align: center;
+        } 
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include mediaQuery ($break-md) {
+            display: block !important;
+        }
+    }
+    &__card {
+        padding: 2rem;
+        .cardtitle1 {
+            padding: 2rem 30px;
+            text-align: center;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+            
+        }
+        .card_bottom{
+            color: #18256D;
+            font-family: $ff-secondary;
+            margin-top: 1.5rem;
+            display: flex;
+            h1{
+                font-size: 5rem;
+            }
+            
+        }
+        .card_bottoms{
+            font-family: $ff-secondary;
+            margin-left: 1rem;
+            margin-top: 1rem;
+            h2{
+                font-size: 2rem;
+            }
+            a{
+                font-size: 1.2rem;
+            }
+
+            &:hover a{
+                transform: scale(1.1);
+                color: black;
+            }
+        }
+        .cardimg {
+            background-color: $clr-primary;
+            overflow: hidden;
+            position: relative;
+           border-radius: 1rem;
+            img {
+                max-width: 100%;
+                transition: all 0.3s ease-out;
+                transform: scale(1.1);
+            }
+            .prev {
+                position: absolute;
+                left: 120px;
+                bottom: 144px;
+                color: $clr-white;
+                padding: 15px;
+                transform: translateY(30%);
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+                li {
+                    background-color: $clr-black;
+                    list-style: none;
+                    border-radius: 2rem;
+                    padding: 5px 0.5rem;
+                    transition: all 0.3 ease-out;
+                }
+                a {
+                    color: $clr-white;
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+
+            }
+            
+        }
+        .cardimg:hover img {
+            transform: scale(1.2);
+            opacity: 0.3;
+        }
+        .cardimg:hover .prev {
+            transform: translateY(0);
+            visibility: visible;
+
+
+        }
+    }
+}
+.contact{
+    color: white;
+    margin-top: 1.5rem;
+    @include mediaQuery ($break-md){
+          
+    }
+    hr{
+        margin-top: 1.5rem;
+    }
+    h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+        @include mediaQuery ($break-md){
+          text-align: center;
+        }
+    }
+    p{
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        @include mediaQuery ($break-md){
+          text-align: center;
+        }
+    }
+    &_icon{
+        margin-top: 0.5rem;
+        @include mediaQuery ($break-md){
+          margin-bottom: 5rem;
+        }
+
+        ul{
+            align-items: center;
+            
+            li{
+                gap: 2rem;
+                align-items: center;
+                p{
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+                   
+                }
+                i{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+    }
+    &_wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include mediaQuery ($break-md){
+          display: block;
+        }
+    }
+    
+}
+.text_box {
+    margin-bottom: 4rem;
+    margin-top: -4rem;
+    
+        a{
+            padding: 0.8rem;
+            background-color: $clr-white;
+            color: $clr-primary;
+            border-radius: 2rem;
+            position: relative;
+            left: 27rem;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+
+            @include mediaQuery ($break-md){
+                position: relative;
+                left: 10rem;
+            }
+        }
+
+
+    }
+    .input_group{
+        input[type=text], select {
+            width: 100%;
+            padding: 14px 22px;
+            margin: 10px 0;
+            border: 1px solid #555;
+            border-radius: 7px;
+            box-sizing: border-box;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #555;
+            border-radius: 7px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+            margin: 10px 0;
+    }
+}
+.footer_wrapper{
+    color: $clr-primary;
+    display: flex;
+    margin-top: 2rem;
+    @include mediaQuery ($break-md){
+          display: block !important;
+       position: relative;  
+    }
+    .footer_icons{
+        font-size: 2rem;
+        ul{
+           gap: 1rem;
+        }
+    }
+    .location{
+        gap: 1rem;
+        margin-top: 0.7rem; 
+        margin-left: 12rem;
+        @include mediaQuery ($break-md){
+         position: relative;  
+         right: 12rem;
+      }
+    }
+}
+.footers{
+    hr{
+        color: $clr-primary;
+        border: solid 1px;
+       margin-top: 1rem;
+    }
+    color: $clr-primary;
+    .contactme{
+        @include mediaQuery ($break-md){
+          margin-left: 0rem;
+          margin-top: 1rem;
+        }
+      margin-left: 58rem;
+      margin-top: -3rem;
+      li{
+        gap: 1rem;
+      }
+    }
+
+ 
+}
